@@ -29,7 +29,7 @@ public class ClienteController {
 		return clienteService.saveCliente(cliente);
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/{idcCliente}")
 	public Cliente getCliente(@PathVariable Long idcCliente) {
 		return clienteService.getClienteById(idcCliente);
 	}
@@ -39,7 +39,7 @@ public class ClienteController {
 		return clienteService.getAllClientes();
 	}
 	
-	@DeleteMapping("/{id}")
+	@DeleteMapping("/{idcCliente}")
 	public void deleteCliente(@PathVariable Long idcCliente) {
 		clienteService.deleteCliente(idcCliente);
 	}
